@@ -9,19 +9,56 @@ body {
   position        : relative;
 }
 
-header {
+header,
+h2 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.source:hover {
+  background-color: #21262d;
 }
 
 .animate a {
   color                  : transparent;
-  text-decoration        : none;
   background-image       : linear-gradient(to right, #39d353, #58a6ff, #e3b341);
   -webkit-background-clip: text;
   background-clip        : text;
   background-size        : 500%;
   -webkit-background-size: 500%;
   animation              : gradient 5s linear infinite;
+}
+
+button {
+  cursor       : pointer;
+  width        : 200px;
+}
+
+.wrapper {
+  margin        : 24px;
+  display       : flex;
+  flex-direction: column;
+}
+
+.project {
+  display        : flex;
+  justify-content: space-evenly;
+  margin         : 10px;
+}
+
+.project__info {
+  font-size      : 2rem;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+}
+
+.project__preview {
+  width: 70%;
 }
 
 @keyframes gradient {
