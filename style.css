@@ -49,6 +49,11 @@ a {
   transform: scale(0.97)
 }
 
+[data-gh-icon] {
+  margin-left: 10px;
+  transition : .4s ease;
+}
+
 .animate a {
   color                  : transparent;
   background-image       : linear-gradient(to right, #39d353, #58a6ff, #e3b341);
