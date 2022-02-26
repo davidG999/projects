@@ -1,9 +1,9 @@
-const source = document.querySelector('.source')
+const source = document.querySelectorAll('.source')
 
-source.addEventListener('mouseenter', e => {
-  source.querySelector('[data-gh-icon]').style.filter = 'invert(100%)'
-})
+source.forEach(e => e.addEventListener('mouseenter', e => {
+  e.target.querySelector('[data-gh-icon]').style.filter = 'invert(100%)'
+}))
 
-source.addEventListener('mouseleave', e => {
-  source.querySelector('[data-gh-icon]').style.filter = 'invert(0%)'
-})
+source.forEach(e => e.addEventListener('mouseleave', e => {
+  e.target.querySelector('[data-gh-icon]').style.filter = 'invert(0%)'
+}))
