@@ -18,7 +18,8 @@ a {
   text-decoration: none;
 }
 
-.flex a {
+.project__source a,
+.project__try-it a {
   background     : transparent;
   border-radius  : 2px;
   width          : 250px;
@@ -34,7 +35,8 @@ a {
   border-radius  : 5px;
 }
 
-.flex a:hover {
+.project__source a:hover,
+.project__try-it a:hover {
   border: 2px solid #aaa;
 }
 
@@ -45,7 +47,8 @@ a {
   transition: .4s ease;
 }
 
-.flex:active {
+.project__source:active,
+.project__try-it:active {
   transform: scale(0.97)
 }
 
