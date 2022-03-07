@@ -6,11 +6,7 @@ body {
   font-family     : 'Open Sans';
   background-color: #222831;
   color           : #eee;
-  position        : relative;
-}
-
-header {
-  text-align: center;
+  text-align      : center;
 }
 
 a {
@@ -24,7 +20,7 @@ a {
   border-radius  : 2px;
   width          : 250px;
   height         : 50px;
-  margin         : 10px;
+  margin-bottom  : 20px;
   font-size      : 1.2rem;
   display        : flex;
   justify-content: center;
@@ -74,9 +70,10 @@ a {
 }
 
 .project {
-  display        : flex;
-  justify-content: space-evenly;
-  margin         : 10px;
+  display           : flex;
+  justify-content   : space-around;
+  align-items       : center;
+  margin            : 10px;
 }
 
 .project__info {
@@ -85,10 +82,13 @@ a {
   flex-direction : column;
   justify-content: center;
   align-items    : center;
+  width          : 30%;
+  margin         : 12px;
 }
 
 .project__preview {
-  width: 70%;
+  width : 70%;
+  margin: 12px;
 }
 
 @keyframes gradient {
