@@ -1,6 +1,11 @@
 const source = document.querySelectorAll('.source')
 const projectsPreviews = document.querySelectorAll('.project__preview')
 
+let uniqueGHLink = '',
+  uniqueTryItLink = '',
+  uniqueEmoji = '',
+  uniqueTitle = ''
+
 source.forEach(e => e.addEventListener('mouseenter', e => {
   e.target.querySelector('[data-gh-icon]').style.filter = 'invert(100%)'
 }))
