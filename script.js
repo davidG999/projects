@@ -21,3 +21,9 @@ const tryItResponsive = `
     <a href="https://davidg999.github.io/hover-board" class="try-it" target="_blank">Try it out yourself! 🎨</a>
   </div>
   `
+
+if (document.body.clientWidth <= 995) {
+  projectsPreviews.forEach(p => p.insertAdjacentHTML('afterend', `${sourceResponsive} ${tryItResponsive}`))
+  document.querySelectorAll('[data-default]').forEach(e => e.style.display = 'none')
+}
+
