@@ -104,3 +104,19 @@ a {
     background-position: 0 100%;
   }
 }
+
+@media (max-width: 995px) {
+  .project {
+    justify-content: center;
+  }
+
+  .project__info {
+    width          : 100%;
+    flex-direction : row;
+    justify-content: space-evenly;
+  }
+
+  .project {
+    flex-wrap: wrap;
+  }
+}

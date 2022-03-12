@@ -31,7 +31,8 @@ source.forEach(e => e.addEventListener('mouseleave', e => {
 
 
 if (document.body.clientWidth <= 995) {
-  projectsPreviews.forEach(p => p.insertAdjacentHTML('afterend', `${sourceResponsive} ${tryItResponsive}`))
-  document.querySelectorAll('[data-default]').forEach(e => e.style.display = 'none')
+  document.querySelectorAll('[data-default]').forEach(i => i.style.display = 'none')
+  document.querySelectorAll('[data-responsive]').forEach(h => h.style.display = 'block')
+  projectsPreviews.forEach(p => p.insertAdjacentHTML('afterend', insertUniqueProjectInfo(p)))
 }
 
