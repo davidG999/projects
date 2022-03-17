@@ -73,19 +73,21 @@ a {
 }
 
 .wrapper {
-  margin          : 24px;
+  margin          : 10px;
   display         : flex;
   flex-direction  : column;
-  margin        : 24px;
-  display       : flex;
-  flex-direction: column;
+  border-radius   : 15px;
+  position        : relative;
+  background-color: #21252c;
 }
 
-.project {
-  display           : flex;
-  justify-content   : space-around;
-  align-items       : center;
-  margin            : 10px;
+.wrapper::before {
+  content         : "";
+  position        : absolute;
+  z-index         : -1;
+  inset           : -10px;
+  /* border-radius: 16px; */
+  background      : linear-gradient(200deg, #39d35399, #58a6ff99 33%, #e3b34199 66%);
 }
 
 .project {
