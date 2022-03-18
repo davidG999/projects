@@ -9,8 +9,12 @@ body {
   text-align      : center;
 }
 
+h1 {
+  font-size: 2.3rem;
+}
+
 h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 a {
@@ -81,7 +85,6 @@ a {
   position        : absolute;
   z-index         : -1;
   inset           : -10px;
-  /* border-radius: 16px; */
   background      : linear-gradient(200deg, #39d35399, #58a6ff99 33%, #e3b34199 66%);
 }
 
@@ -102,6 +105,7 @@ a {
   flex-wrap         : wrap;
   width             : 100%;
   justify-content   : center;
+}
 
 .separator {
   width : 100%;
@@ -110,7 +114,7 @@ a {
 }
 
 .project__preview {
-  width : 70%;
+  width : 55%;
   margin: 15px;
 }
 
@@ -125,5 +129,59 @@ a {
 
   100% {
     background-position: 0 100%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .project__preview {
+    width: 70%;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .project__source a,
+  .project__try-it a {
+    width        : 200px;
+    height       : 40px;
+    margin-bottom: 15px;
+    font-size    : .95rem;
+  }
+
+  [data-gh-icon] {
+    width : 24px;
+    height: 24px;
+  }
+
+  .project__preview {
+    width: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .wrapper {
+    margin: 5px;
+  }
+
+  .wrapper::before {
+    inset: -5px;
+  }
+
+  .separator {
+    width : 100%;
+    height: 5px;
+    margin: 20px 0 0;
+  }
+
+  .project__preview {
+    width: 90%;
   }
 }
