@@ -218,6 +218,20 @@ a {
 }
 
 @media (max-width: 575px) {
+
+  .project__source a,
+  .project__try-it a {
+    width        : 170px;
+    height       : 34px;
+    margin-bottom: 13px;
+    font-size    : .81rem;
+  }
+
+  [data-gh-icon] {
+    width : 20px;
+    height: 20px;
+  }
+
   .confirmation {
     min-height: 40px;
   }
