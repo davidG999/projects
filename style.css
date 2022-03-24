@@ -217,6 +217,18 @@ a {
   }
 }
 
+[data-lazy] {
+  transform : translateX(20%);
+  opacity   : 0;
+  transition: .5s;
+}
+
+.fade {
+  transform : translateX(0);
+  opacity   : 1.0;
+  transition: .5s;
+}
+
 @media (max-width: 575px) {
 
   .project__source a,
