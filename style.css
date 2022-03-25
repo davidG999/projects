@@ -74,13 +74,6 @@ a {
   animation              : gradient 5s linear infinite;
 }
 
-.wrapper {
-  display         : flex;
-  flex-direction  : column;
-  border-radius   : 15px;
-  background-color: #21252c;
-}
-
 .project {
   display        : flex;
   flex-wrap      : wrap;
