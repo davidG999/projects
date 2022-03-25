@@ -21,8 +21,14 @@ const lazyLoad = target => {
       if (entry.isIntersecting) {
         const preview = entry.target
         const src = preview.getAttribute('data-lazy')
-        
-        preview.setAttribute('src', src)
+
+        if (preview.tagName === 'VIDEO') {
+          preview.insertAdjacentHTML('afterbegin', `
+            <source src="${src}" type="video/mp4">
+          `)
+        } else {
+          preview.setAttribute('src', src)
+        }
 
         if (src === 'preview/warning.png') {
           preview.nextElementSibling.style.display = 'block'
