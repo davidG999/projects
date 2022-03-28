@@ -31,7 +31,9 @@ const lazyLoad = target => {
 
         if (preview.tagName === 'VIDEO') {
           preview.insertAdjacentHTML('afterbegin', `
-            <source src="${src}" type="video/mp4">
+            <source src="${src}.mp4" type="video/mp4">
+            <source src="${src}.webm" type="video/webm">
+            Your browser does not support the HTML5 video element.
           `)
         } else {
           preview.setAttribute('src', src)
